@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <style>
+        /* General body styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header Styles */
+        h1 {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #4CAF50;
+            color: white;
+            margin: 0;
+        }
+
+        /* Container for all project cards */
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        /* Individual project card styling */
+        .project-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 280px;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Hover effect for project cards */
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Styling for project title */
+        .project-card h3 {
+            color: #333;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        /* Description styling */
+        .project-card p {
+            color: #666;
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        /* Link styling */
+        .project-card a {
+            color: #fff;
+            background-color: #007bff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .project-card a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Media Queries for responsive design */
+        @media (max-width: 768px) {
+            .project-card {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>My Projects</h1>
+    <div class="projects-container">
+        <!-- Project 1 -->
+        <div class="project-card">
+            <h3>Machine Learning Model</h3>
+            <p>A project on ML model development for disease classification.</p>
+            <a href="#">View Project</a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <h3>AI-based Image Classifier</h3>
+            <p>A CNN model trained to classify potato diseases.</p>
+            <a href="#">View Project</a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+            <h3>Titanic Data Analysis</h3>
+            <p>Predicting survival chances of passengers in Titanic dataset.</p>
+            <a href="#">View Project</a>
+        </div>
+
+        <!-- Add more projects as needed -->
+    </div>
+</body>
+</html>
+
